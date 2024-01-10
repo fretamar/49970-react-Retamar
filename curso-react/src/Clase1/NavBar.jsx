@@ -1,4 +1,4 @@
-import Carrito from "./Carrito";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
     return (
@@ -19,7 +19,7 @@ const NavBar = () => {
                     </li>
                 </ul>
                 <div className="ml-auto">
-                <Carrito />
+                <CartWidget />
                 </div>
             </div>
         </nav>

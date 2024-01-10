@@ -1,6 +1,6 @@
 import Logo from './Logo'
 import NavBar from './NavBar'
-import Carrito from './Carrito'
+import Carrito from './CartWidget'
 
 const Head=()=>{
     return(

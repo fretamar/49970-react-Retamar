@@ -21,7 +21,7 @@ const Estilo2 = {
 
 
 
-const Carrito = () => {
+const CartWidget = () => {
     const [productosCarrito, setproductosCarrito] = useState(0)
     const modificarBoton = () => {
         setproductosCarrito(prevproductosCarrito => prevproductosCarrito + 1)
@@ -39,4 +39,4 @@ const Carrito = () => {
     )
 }
 
-export default Carrito;
+export default CartWidget;
