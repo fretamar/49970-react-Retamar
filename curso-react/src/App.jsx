@@ -1,26 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Subtitulo from './Clase1/Subtitulo'
-import Titulo from './Clase1/Titulo'
-import Subtitulo2 from './Clase1/Subtitulo2'
-import BarritasMuecas from './Clase1/barritasMuecas'
-import PanDulceDonLorenzo from './Clase1/panDulceDonLorenzo'
-import PanDulceValido from './Clase1/panDulceValido'
+import Head from './Clase1/Head'
+import Footer from './Clase1/footer'
+import Productos from './Clase1/productos'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
      <div>
-        <Titulo />
-        <Subtitulo /> 
-        <Subtitulo2 />
-        <BarritasMuecas />
-        <PanDulceDonLorenzo />
-        <PanDulceValido />
+        <Head />
+        <div style={{paddingBottom:"20px"}}></div>
+        <Productos />
+        <Footer />
       </div>
     </>
 )}
