@@ -11,7 +11,7 @@ function App() {
      <div>
         <Head />
         <div style={{paddingBottom:"20px"}}></div>
-        <ItemListContainer greeting={"Bienvenidx! Hoy tenemos productos en oferta"} />
+        <ItemListContainer greeting={"Bienvenidx!❣ 💥Hoy tenemos productos en oferta💥"} />
         <Productos />
         <Footer />
       </div>
