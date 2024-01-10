@@ -2,7 +2,7 @@ const BarritasMuecas = () => {
 let producto = {imagen:"./src/assets/barritas-muecas-todos-sabores.png.png" , titulo:"Barritas de cereal Müecas - OFERTA" , precio:"450" , descripcion:"Creemos que hacer alimentos y alimentarse puede ser algo lindo, rico y divertido. Eso es lo que intentamos transmitir. Más de 5 variedades."};
 
     return (
-        <div className="card col-sm-12" style={{borderColor:"blue", backgroundColor:"#E7D4F5", width:"70%"}}>
+        <div className="card" style={{borderColor:"blue", backgroundColor:"#E7D4F5", width:"70%"}}>
             <div className="row text-center">
                 <div className="col-md-4 text-end">
                     <img src={producto.imagen} alt="Barritas de Cereal" />
