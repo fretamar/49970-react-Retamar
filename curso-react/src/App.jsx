@@ -1,8 +1,8 @@
 import './App.css'
-import Head from './Clase1/Head'
-import ItemListContainer from './Clase1/ItemListContainer'
-import Footer from './Clase1/footer'
-import Productos from './Clase1/productos'
+import Head from './Componentes/Head'
+import ItemListContainer from './Componentes/ItemListContainer'
+import Footer from './Componentes/footer'
+import Productos from './Componentes/productos'
 
 function App() {
 
