@@ -1,7 +1,7 @@
 import ItemCount from "./ItemCount";
 
 const PanDulceDonLorenzo = () => {
-    let producto = { imagen: "./src/assets/pan-dulce-frutas-don-lorenzo.png.png", titulo: "Pan dulce con frutas Don Lorenzo - OFERTA", precio: "700", descripcion: "Ingredientes: Harina de trigo (enriquecida según Ley 25630*), frutas escurridas, oleomargarina, azúcar, huevos frescos, miel, levadura, emulsionante (mono y diflicéridos de ácidos grasos), sal, aromatizantes, saborizantes artificiales, lece en polvo, conservador (propionato de calico). Con conservador autorizado. Elaborado con oleomargarina, con esencias artificiales permitidas. Tenor graso: 9.9%." };
+    let producto = {marca: "Don Lorenzo", tamanio: "1kg", tipo: "Pan dulce", formato:"individual", imagen: "./src/assets/pan-dulce-frutas-don-lorenzo.png.png", precio: "700"  };
 
     return (
         <div className="card" style={{ borderColor: "blue", backgroundColor: "#E7D4F5", width: "70%" }}>
@@ -9,10 +9,9 @@ const PanDulceDonLorenzo = () => {
                 <div className="col-md-4 text-end">
                     <img src={producto.imagen} alt="Pan Dulce con Frutas" />
                 </div>
-                <div className="col-md-8 py-2 text-start">
-                    <h3>{producto.titulo}</h3>
-                    <h5 style={{ color: "red", fontStyle: "bold" }}>${producto.precio} c/u</h5>
-                    <p className="text-secondary" style={{ fontStyle: "italic" }}>{producto.descripcion}</p>
+                <div className="col-md-10 py-2 text-start">
+                    <h3>{producto.tipo} {producto.marca} {producto.formato}</h3>
+                    <h5 style={{ color: "red", fontStyle: "bold" }}>$ {producto.precio} c/u</h5>
                     <ItemCount />
                 </div>
             </div>
