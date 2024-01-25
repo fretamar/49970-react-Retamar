@@ -2,7 +2,7 @@ import BarritasMuecas from './BarritasMuecas'
 import PanDulceDonLorenzo from './PanDulceDonLorenzo'
 import PanDulceValido from './PanDulceValido'
 
-const Productos = () => {
+const ProductosPrueba = () => {
     return (
         <div className='container mx-5'>
             <BarritasMuecas />
@@ -14,4 +14,4 @@ const Productos = () => {
     )
 }
 
-export default Productos;
+export default ProductosPrueba;

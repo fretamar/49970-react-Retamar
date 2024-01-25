@@ -1,13 +1,12 @@
 import ItemCount from "./ItemCount";
 
-const PanDulceDonLorenzo = () => {
-    let producto = {marca: "Don Lorenzo", tamanio: "1kg", tipo: "Pan dulce", formato:"individual", imagen: "./src/assets/pan-dulce-frutas-don-lorenzo.png.png", precio: "700"  };
+const Item = ({ producto }) => {
 
     return (
-        <div className="card" style={{ borderColor: "blue", backgroundColor: "#E7D4F5", width: "45%" }}>
+        <div key={produ.id} className="card" style={{ borderColor: "blue", backgroundColor: "#E7D4F5", width: "70%" }}>
             <div className="row text-center">
                 <div className="col-md-4 text-end">
-                    <img src={producto.imagen} alt="Pan Dulce con Frutas" />
+                    <img src={producto.foto} alt={producto.tipo} />
                 </div>
                 <div className="col-md-10 py-2 text-start">
                     <h3>{producto.tipo} {producto.marca} {producto.formato}</h3>
@@ -19,4 +18,4 @@ const PanDulceDonLorenzo = () => {
     )
 }
 
-export default PanDulceDonLorenzo;
+export default Item;  

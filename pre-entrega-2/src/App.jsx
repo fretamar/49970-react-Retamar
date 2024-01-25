@@ -1,8 +1,10 @@
 import './App.css'
 import Head from './Componentes/Head'
 import ItemListContainer from './Componentes/ItemListContainer'
+import ProductosPrueba from './Componentes/ProductosPrueba'
 import Footer from './Componentes/footer'
-import Productos from './Componentes/productos'
+import Fetch from './Componentes/Fetch'
+import Item from './Componentes/Item'
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
         <Head />
         <div style={{paddingBottom:"20px"}}></div>
         <ItemListContainer greeting={"Bienvenidx!❣ 💥Hoy tenemos productos en oferta💥"} />
-        <Productos />
+        <Fetch />
         <Footer />
       </div>
     </>

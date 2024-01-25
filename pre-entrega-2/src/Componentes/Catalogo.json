@@ -1,0 +1,254 @@
+[
+    {
+        "id": 123,
+        "marca": "Villa del sur",
+        "tamanio": "500 cc",
+        "tipo": "Agua mineral",
+        "formato": "Botella",
+        "foto": "../assets/villa-del-sur-botella.png",
+        "precio": 200
+    },
+    {
+        "id": 234,
+        "marca": "Bonaqua",
+        "tamanio": "500 cc",
+        "tipo": "Agua mineral",
+        "formato": "Botella",
+        "foto": "../assets/bonaqua-botella.png",
+        "precio": 150
+    },
+    {
+        "id": 345,
+        "marca": "Villavicencio",
+        "tamanio": "500 cc",
+        "tipo": "Agua mineral",
+        "formato": "Botella",
+        "foto": "../assets/villavicencio-botella.png",
+        "precio": 220
+    },
+    {
+        "id": 456,
+        "marca": "Glaciar",
+        "tamanio": "500 cc",
+        "tipo": "Agua mineral",
+        "formato": "Botella",
+        "foto": "../assets/glaciar-botella.png",
+        "precio": 170
+    },
+    {
+        "id": 789,
+        "marca": "Heineken",
+        "tamanio": "500 cc",
+        "tipo": "Cerveza",
+        "formato": "Lata",
+        "foto": "../assets/heineken-lata.png",
+        "precio": 600
+    },
+    {
+        "id": 321,
+        "marca": "Heineken",
+        "tamanio": "1 litro",
+        "tipo": "Cerveza",
+        "formato": "Botella",
+        "foto": "../assets/heineken-botella.png",
+        "precio": 1200
+    },
+    {
+        "id": 432,
+        "marca": "Stella Artois",
+        "tamanio": "500 cc",
+        "tipo": "Cerveza",
+        "formato": "Lata",
+        "foto": "../assets/stella-artois-lata.png",
+        "precio": 600
+    },
+    {
+        "id": 543,
+        "marca": "Stella Artois",
+        "tamanio": "1 litro",
+        "tipo": "Cerveza",
+        "formato": "Botella",
+        "foto": "../assets/stella-artois-botella.png",
+        "precio": 1200
+    },
+    {
+        "id": 654,
+        "marca": "Quilmes",
+        "tamanio": "500 cc",
+        "tipo": "Cerveza",
+        "formato": "Lata",
+        "foto": "../assets/quilmes-lata.png",
+        "precio": 550
+    },
+    {
+        "id": 765,
+        "marca": "Quilmes",
+        "tamanio": "1 litro",
+        "tipo": "Cerveza",
+        "formato": "Botella",
+        "foto": "../assets/quilmes-botella.png",
+        "precio": 1000
+    },
+    {
+        "id": 987,
+        "marca": "Brahma",
+        "tamanio": "500 cc",
+        "tipo": "Cerveza",
+        "formato": "Lata",
+        "foto": "../assets/brahma-lata.png",
+        "precio": 450
+    },
+    {
+        "id": 111,
+        "marca": "Brahma",
+        "tamanio": "1 litro",
+        "tipo": "Cerveza",
+        "formato": "Botella",
+        "foto": "../assets/brahma-botella.png",
+        "precio": 800
+    },
+    {
+        "id": 222,
+        "marca": "Coca Cola",
+        "tamanio": "330 cc",
+        "tipo": "Gaseosa",
+        "formato": "Lata",
+        "foto": "../assets/coca-cola-original-lata.png",
+        "precio": 350
+    },
+    {
+        "id": 333,
+        "marca": "Coca Cola",
+        "tamanio": "1.5 litros",
+        "tipo": "Gaseosa",
+        "formato": "Botella",
+        "foto": "../assets/coca-cola-original-botella.png",
+        "precio": 800
+    },
+    {
+        "id": 444,
+        "marca": "Sprite",
+        "tamanio": "330 cc",
+        "tipo": "Gaseosa",
+        "formato": "Lata",
+        "foto": "../assets/sprite-lata.png",
+        "precio": 300
+    },
+    {
+        "id": 555,
+        "marca": "Sprite",
+        "tamanio": "1.5 litros",
+        "tipo": "Gaseosa",
+        "formato": "Botella",
+        "foto": "../assets/sprite-botella.png",
+        "precio": 700
+    },
+    {
+        "id": 666,
+        "marca": "Paso de los toros Pomelo",
+        "tamanio": "330 cc",
+        "tipo": "Gaseosa",
+        "formato": "Lata",
+        "foto": "../assets/paso-de-los-toros-lata.png",
+        "precio": 300
+    },
+    {
+        "id": 777,
+        "marca": "Paso de los toros Pomelo",
+        "tamanio": "1.5 litros",
+        "tipo": "Gaseosa",
+        "formato": "Botella",
+        "foto": "../assets/paso-de-los-toros-botella.png",
+        "precio": 700
+    },
+    {
+        "id": 888,
+        "marca": "Villavicencio",
+        "tamanio": "500 cc",
+        "tipo": "Agua con gas",
+        "formato": "Botella",
+        "foto": "../assets/villavicencio-con-gas.png",
+        "precio": 250
+    },
+    {
+        "id": 787,
+        "marca": "Chivas",
+        "tamanio": "1 litro",
+        "tipo": "Whisky",
+        "formato": "Botella",
+        "foto": "../assets/chivas-regal.png",
+        "precio": 7000
+    },
+    {
+        "id": 121,
+        "marca": "Johnnie Walker Red Label",
+        "tamanio": "1 litro",
+        "tipo": "Whisky",
+        "formato": "Botella",
+        "foto": "../assets/red-label.png",
+        "precio": 12000
+    },
+    {
+        "id": 232,
+        "marca": "Johnnie Walker Black Label",
+        "tamanio": "1 litro",
+        "tipo": "Whisky",
+        "formato": "Botella",
+        "foto": "../assets/black-label.png",
+        "precio": 20000
+    },
+    {
+        "id": 343,
+        "marca": "Johnnie Walker Blue Label",
+        "tamanio": "1 litro",
+        "tipo": "Whisky",
+        "formato": "Botella",
+        "foto": "../assets/blue-label.png",
+        "precio": 90000
+    },
+    {
+        "id": 454,
+        "marca": "Trumpeter Malbec",
+        "tamanio": "1 litro",
+        "tipo": "Vino",
+        "formato": "Botella",
+        "foto": "../assets/vino-trumpeter.png",
+        "precio": 7000
+    },
+    {
+        "id": 565,
+        "marca": "Nicassia Malbec",
+        "tamanio": "1 litro",
+        "tipo": "Vino",
+        "formato": "Botella",
+        "foto": "../assets/vino-nicasia.png",
+        "precio": 6500
+    },
+    {
+        "id": 774,
+        "marca": "Müecas",
+        "tamanio": "200grs",
+        "tipo": "Barritas de cereal",
+        "formato": "individual",
+        "foto": "../src/assets/barritas-muecas-todos-sabores.png",
+        "precio": 450
+    },
+    {
+        "id": 887,
+        "marca": "Don Lorenzo",
+        "tamanio": "1kg",
+        "tipo": "Pan dulce",
+        "formato": "individual",
+        "foto": "../src/assets/pan-dulce-frutas-don-lorenzo.png",
+        "precio": 700
+    },
+    {
+        "id": 545,
+        "marca": "Valido",
+        "tamanio": "1kg",
+        "tipo": "Pan dulce",
+        "formato": "individual",
+        "foto": "./src/assets/pan-dulce-frutas-valido.png",
+        "precio": 750
+    }
+]

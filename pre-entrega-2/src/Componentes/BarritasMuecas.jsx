@@ -4,7 +4,7 @@ const BarritasMuecas = () => {
     let producto = {marca: "Müecas", tamanio: "200grs", tipo: "Barritas de cereal", formato:"individual", imagen: "./src/assets/barritas-muecas-todos-sabores.png.png", precio: "450"};
 
     return (
-        <div className="card" style={{ borderColor: "blue", backgroundColor: "#E7D4F5", width: "70%" }}>
+        <div className="card" style={{ borderColor: "blue", backgroundColor: "#E7D4F5", width: "45%" }}>
             <div className="row text-center">
                 <div className="col-md-4 text-end">
                     <img src={producto.imagen} alt="Barritas de Cereal" />
