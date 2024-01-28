@@ -6,16 +6,16 @@ const NavBar = () => {
             <div className="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <a className="navbar-brand" href="">Inicio</a>
+                        <a className="navbar-brand" href="">Productos</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Productos</a>
+                        <a className="nav-link" href="#">Alimentos</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Nosotros</a>
+                        <a className="nav-link" href="#">Bebidas S-Alcohol</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Contacto</a>
+                        <a className="nav-link" href="#">Bebidas S-Alcohol</a>
                     </li>
                 </ul>
                 <div className="ml-auto">

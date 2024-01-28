@@ -1,22 +1,27 @@
 import { useRef } from "react";
 import { useState } from 'react';
+import "../App.css"
 
 const estiloInput = {
     width: "20%",
     border: "1px white"
 }
 
-const ItemCount = () => {
+const ItemCount = ({stock}) => {
     const modificaRef = useRef(null);
     const [cantidad, setCantidad] = useState(1)
+    const [ProducStock, setProducStock] = useState(stock)
 
     const modificaMensaje = () => {
-        modificaRef.current.innerHTML = "✅Producto agregado";
+        modificaRef.current.innerHTML = "✅Producto agregado al agregado";
         modificaRef.current.className = "text-secondary italic";
     };
 
     const incremento = () => {
-        setCantidad(cantidad + 1)
+        if (cantidad <= ProducStock) {
+            setCantidad(cantidad + 1)
+           
+        }
     }
 
     const decremento = () => {
@@ -25,14 +30,21 @@ const ItemCount = () => {
         }
     }
 
+    const onAdd = () => {
+        if (cantidad <= ProducStock) {
+            setProducStock(ProducStock - cantidad)
+            setCantidad(1)
+        }
+    }
+
     return (
         <div>
-            <button type="button" className="btn btn-primary" onClick={modificaMensaje}>Agregar al carrito</button>
-            <div className="input-group mb-3">
+            <div className="selec-stock">
                 <button className="input-group-text" onClick={decremento}>-</button>
-                <input type="number" aria-label="Amount (to the nearest dollar)" value={cantidad}></input>
+                <input type="number" className="text-stock" aria-label="Amount (to the nearest dollar)" value={cantidad}></input>
                 <button className="input-group-text" onClick={incremento}>+</button>
             </div>
+            <button type="button" className="btn btn-primary" onClick={() => {onAdd(); modificaMensaje(); }} style={{marginTop:"5px"}}>Agregar al carrito</button>
             <p ref={modificaRef} style={{ fontStyle: "italic" }} ></p>
         </div>
     );

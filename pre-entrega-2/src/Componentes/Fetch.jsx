@@ -1,26 +1,36 @@
 import { useEffect, useState } from "react"
 import Catalogo from "./Catalogo.json"
 import ItemCount from "./ItemCount"
+import "../App.css"
 
 const Fetch = () => {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        setProductos(Catalogo)
-    })
+        const Promesa = new Promise(resolve => {
+            setTimeout(() => {
+                resolve(Catalogo)
+            }, 1000)
+        })
+        Promesa.then(data => {
+            setProductos(data)
+        })
+
+    }, [])
+
     return (
-        <div className="container">
+        <div className="lista-productos">
             {productos.map(produ => (
                 <div key={produ.id} style={{ paddingBottom: "5px" }}>
-                    <div  className="card" style={{ borderColor: "blue", backgroundColor: "#E7D4F5", width: "70%" }}>
+                    <div className="tarjeta-producto" style={{ borderColor: "blue", backgroundColor: "#E7D4F5" }}>
                         <div className="row text-center">
-                            <div className="col-md-4 text-end">
+                            <div>
                                 <img src={produ.foto} alt={produ.tipo} />
                             </div>
-                            <div className="col-md-10 py-2 text-start">
-                                <h3>{produ.tipo} {produ.marca} {produ.formato}</h3>
+                            <div>
+                                <h3 className="titulo-producto">{produ.tipo} {produ.marca} {produ.formato}</h3>
                                 <h5 style={{ color: "red", fontStyle: "bold" }}>$ {produ.precio} c/u</h5>
-                                <ItemCount />
+                                <ItemCount stock={19} />
                             </div>
                         </div>
                     </div></div>))
