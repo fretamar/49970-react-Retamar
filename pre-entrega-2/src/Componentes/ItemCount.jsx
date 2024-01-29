@@ -9,7 +9,7 @@ const ItemCount = ({stock}) => {
     const [ProducStock, setProducStock] = useState(stock)
 
     const modificaMensaje = () => {
-        modificaRef.current.innerHTML = "✅Producto agregado al agregado";
+        modificaRef.current.innerHTML = "✅Producto agregado al carrito";
         modificaRef.current.className = "text-secondary italic";
     };
 
