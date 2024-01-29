@@ -32,7 +32,7 @@ const Item = () => {
                                     <img src={produ.foto} alt={produ.tipo} />
                                 </div>
                                 <div>
-                                    <h3 className="titulo-producto" style={{ color: "black" }}>{produ.tipo} {produ.marca} {produ.formato}</h3>
+                                    <h3 className="titulo-producto" style={{ color: "black" }}>{produ.tipo} {produ.marca} - {produ.formato}</h3>
                                     <h5 style={{ color: "red", fontStyle: "bold" }}>$ {produ.precio} c/u</h5>
                                 </div>
                             </Link>

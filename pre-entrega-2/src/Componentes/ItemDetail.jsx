@@ -12,7 +12,7 @@ const ItemDetail = ({ item }) => {
                 </div>
                 <div>
                     <div>
-                        <h2>{item.tipo} {item.marca} {item.formato}</h2>
+                        <h2>{item.tipo} {item.marca} - {item.formato}</h2>
                     </div>
                     <div>
                         <h3 style={{ color: "red", fontWeight: "bold" }}>{item.precio} c/u</h3>
