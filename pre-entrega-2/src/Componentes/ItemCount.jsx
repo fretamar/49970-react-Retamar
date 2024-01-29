@@ -2,10 +2,6 @@ import { useRef } from "react";
 import { useState } from 'react';
 import "../App.css"
 
-const estiloInput = {
-    width: "20%",
-    border: "1px white"
-}
 
 const ItemCount = ({stock}) => {
     const modificaRef = useRef(null);

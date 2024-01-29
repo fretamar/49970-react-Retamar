@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -6,16 +7,19 @@ const NavBar = () => {
             <div className="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <a className="navbar-brand" href="">Productos</a>
+                        <Link className="nav-link" activeClassname="active" to={"/ItemListContainer"}>Productos</Link>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Alimentos</a>
+                        <Link className="nav-link" activeClassname="active" to={"/categoria/Alimento"}>Alimentos</Link>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Bebidas S-Alcohol</a>
+                        <Link className="nav-link" activeClassname="active" to={"/categoria/BebidasSinAlcohol"}>Bebidas Sin Alcohol</Link>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Bebidas S-Alcohol</a>
+                        <Link className="nav-link" activeClassname="active" to={"/categoria/BebidasConAlcohol"}>Bebidas Con Alcohol</Link>
+                    </li>
+                    <li className="nav-item active">
+                        <Link className="nav-link" activeClassname="active" to={"/Contacto"}>Contacto</Link>
                     </li>
                 </ul>
                 <div className="ml-auto">
