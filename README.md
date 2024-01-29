@@ -24,8 +24,9 @@
 
 ## Consignas de la 2da pre-entrega 
 
-  - **Creación de componentes:** Cree diferentes componentes, tanto para utilizar dentro de la App (función inical de la página) como para crear sub-componentes. App >> Head >> NavBar
-  - **Utilización de NavBar con categorías seleccionables** Utilicé una NavBar con los estilos de Bootstrap en la cual agregué 4 categorías seleccionables.
-  - **Creación de Brand con título del e-commerce** Generé un Logo, Icono y Nombre de la marca para la página.
-  - **Incorporación de librería de estilos:** Utilicé la librería Bootstrap para trabajar con diversos estilos y componentes propios de la librería.
-  - **Creación de componente CartWidget** Utilicé un Widget dentro de la NavBar el cual tiene un icono de carrito y una notificación, la cual se modifica a traves del evento "onClick", utilizando también los States de React
+  - **NavBar con categorías navegables:** Dividí el catálogo en 3 categorias diferentes las cuales se pueden navegar y filtran por los productos de cada tipo.
+  - **Detalle de ítem seleccionable:** Al seleccionar sobre un producto, te dirige a una tarjeta extendida del mismo la cual contiene una descripción, sumado a un itemCount para seleccionar cantidad.
+  - **Rutas en los logos de head y footer:** Al clickear sobre el logo del Head o Footer en cualquier sección de la página te redirige a la home.
+  - **ItemCount con limite de stock por producto:** Creación de ítemCount para seleccionar la cantidad del producto elegido, con un minimo de 1 producto y un máximo de 20 que queda registrado y se actualiza en caso de seleccionarlo dos veces.
+  - **Utilización de Estados, Efectos y Parametros:** Utilización de estados, parametros y efectos para realizar modificaciones en el DOM, para dar mensajes dentro de cada sección, también para la generación de promesas asincrónicas imitando la utilización de bases de datos externas.
+  - - **Creación de JSON con un array de productos:** Generación de los productos a traves de un JSON el cual contiene las etiquetas de cada caracteristicas las cuales son llamadas y generadas en el DOM.
