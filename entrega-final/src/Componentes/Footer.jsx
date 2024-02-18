@@ -9,10 +9,10 @@ const Footer = () => {
                 <div className="col-md-4 d-flex align-items-center">
                     <Link to={"/ItemListContainer"}>
                         <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                            <img src="./src/assets/car-icono.png" alt="icono" className="bi" style={{ width: "100px", height: "100px" }} />
+                            <img src="../src/assets/car-icono.png" alt="icono" className="bi" style={{ width: "100px", height: "100px" }} />
                         </a>
                     </Link>
-                    <span className="mb-3 mb-md-0 text-body-secondary"> 2024® Página sin fines de lucro. </span>
+                    <span className="footer-font"> 2024® Página sin fines de lucro. </span>
                 </div>
                 <div className="justify-content-end">
                     <Subtitulo />

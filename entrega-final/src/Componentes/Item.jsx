@@ -1,47 +1,58 @@
-import { useEffect, useState } from "react"
-import Catalogo from "./Catalogo.json"
+import { useContext, useEffect, useState } from "react"
+import Catalogo from "../componentes/json/Catalogo.json"
 import { useParams } from "react-router"
 import "../App.css"
 import ItemCount from "./ItemCount"
 import { Link } from "react-router-dom"
+import Cargando from "./Cargando"
+import { CartContext } from "./context/CartContext"
 
-const Item = () => {
+
+const Item = ({item}) => {
+    const {addItem} = useContext(CartContext) 
     const [productos, setProductos] = useState([])
     const { categoria } = useParams()
-
+    const [Visible, setVisible] = useState(true)
+   
     useEffect((item) => {
         const Promesa = new Promise(resolve => {
             setTimeout(() => {
+                setVisible(false)
                 resolve(categoria ? Catalogo.filter(item => item.categoria === categoria) : Catalogo)
-            }, 1000)
+            }, 3000)
         })
         Promesa.then(data => {
             setProductos(data)
         })
-
     }, [categoria])
 
+    const onAdd = (quantity) => {
+        addItem(item, quantity)
+    }
+
     return (
-        <div className="lista-productos">
-            {productos.map(produ => (
-                <div key={produ.id} style={{ paddingBottom: "5px" }}>
-                    <div className="tarjeta-producto" style={{ borderColor: "blue", backgroundColor: "#E7D4F5" }}>
+        <div>
+            {Visible ? <Cargando /> : 
+            <div className="lista-productos">
+            {productos.map(item => (
+                <div key={item.id} style={{ paddingBottom: "5px" }}>
+                    <div className="tarjeta-producto">
                         <div className="row text-center">
-                            <Link to={"/item/" + produ.id} >
+                            <Link to={"/item/" + item.id} >
                                 <div>
-                                    <img src={produ.foto} alt={produ.tipo} />
+                                    <img src={item.foto} alt={item.tipo} />
                                 </div>
                                 <div>
-                                    <h3 className="titulo-producto" style={{ color: "black" }}>{produ.tipo} {produ.marca} - {produ.formato}</h3>
-                                    <h5 style={{ color: "red", fontStyle: "bold" }}>$ {produ.precio} c/u</h5>
+                                    <h3 className="titulo-producto" style={{ color: "black" }}>{item.tipo} {item.marca} - {item.formato}</h3>
+                                    <h5 style={{ color: "red", fontStyle: "bold" }}>$ {item.precio} c/u</h5>
                                 </div>
                             </Link>
-                            <ItemCount stock={19} />
+                            <ItemCount stock={item.stock} onAdd={onAdd}/>
                         </div>
                     </div>
                 </div>
             ))
-            }
+            }</div>}
 
         </div >
     )

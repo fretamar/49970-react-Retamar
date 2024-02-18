@@ -1,12 +1,19 @@
 import ItemCount from "./ItemCount"
 import "../App.css"
+import { useContext, useEffect } from "react"
+import { CartContext } from "./context/CartContext"
 
 
 const ItemDetail = ({ item }) => {
+    const {addItem} = useContext(CartContext) 
 
+    const onAdd = (quantity) => {
+        addItem(item, quantity)
+    }
+    
     return (
         <div>
-            <div className="tarjeta-producto" style={{ backgroundColor: "#E7D4F5", borderRadius: "10px", border: "2px solid blue" }}>
+            <div className="tarjeta-producto" style={{borderRadius: "10px"}}>
                 <div style={{ border: "2px solid white", marginLeft: "10px", borderRadius: "10px", maxWidth: "30%" }}>
                     <img src={item.foto} alt={item.tipo} />
                 </div>
@@ -20,7 +27,7 @@ const ItemDetail = ({ item }) => {
                     <div>
                         <h5 style={{ fontStyle: "italic", fontWeight: "lighter", fontSize: "18px", margin: "10px" }}>{item.descripcion}</h5>
                     </div>
-                    <ItemCount stock={19} />
+                    <ItemCount stock={item.stock} onAdd={onAdd}/>
                 </div>
             </div>
         </div>

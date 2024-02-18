@@ -3,7 +3,7 @@ const Subtitulo2 = () => {
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <p>Dto Colón, Entre Ríos - Argentina</p>
+                    <p className="footer-font">Dto Colón, Entre Ríos - Argentina</p>
                 </div>
             </div>
         </div>

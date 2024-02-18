@@ -23,7 +23,7 @@ const NavBar = () => {
                     </li>
                 </ul>
                 <div className="ml-auto">
-                <CartWidget />
+                <Link to={"/cart"}><CartWidget /></Link>
                 </div>
             </div>
         </nav>

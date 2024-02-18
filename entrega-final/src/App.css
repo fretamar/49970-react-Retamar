@@ -33,10 +33,18 @@
   }
 }
 
+.estilo-general{
+  background-image: url('../src/assets/background-car-distribuidora.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .tarjeta-producto{
   padding: 10px;
-  border: 1px solid blue;
   border-radius: 5px;
+  background-color:rgba(231, 212, 245, 0.8);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,3 +85,43 @@
  align-items: center;
 }
 
+.productos-carrito{
+  display: flex;
+  margin-left: 5px;
+
+}
+
+.resumen-compra {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 50px;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+}
+
+.titulo-compra {
+  display: flex;
+  align-items: center; 
+  height: 50px;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  padding-left: 15px;
+}
+
+.footer-font{
+  color: black;
+  -webkit-text-stroke: 0.3px white;
+}
+
+.form-control{
+  background-color:rgba(231, 212, 245, 0.6)
+}
+
+.imagen-carrito{
+  height: 200px;
+  width: auto;
+  border-radius: 5px;
+  background-color:rgba(231, 212, 245, 0.7);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+ }

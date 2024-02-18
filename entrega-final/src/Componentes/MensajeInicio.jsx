@@ -1,5 +1,5 @@
 import "../App.css"
-import Catalogo from "./Catalogo.json"
+import Catalogo from "../componentes/json/Catalogo.json"
 
 const MensajeInicio = ({greeting}) => {
 
