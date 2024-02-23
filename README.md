@@ -1,10 +1,10 @@
 <h1 align="center">
-  <p align="center">2da Pre-Entrega React JS 49970 - Francisco Retamar</p>
+  <p align="center">Entrega Final React JS 49970 - Francisco Retamar</p>
   <img src="https://res.cloudinary.com/hdsqazxtw/image/upload/v1695043577/nkjgl8ahhhxap6rjrdtz.jpg" alt="React Js Coder"></a>
 </h1>
 
 <div align="center">
-  <a href="https://github.com/fretamar/49970-react-Retamar/tree/pre-entrega-2"><img src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/github-pages-icon.png" align="center" alt="Github pages"></a>    Link a la pre-entrega
+  <a href="https://github.com/fretamar/49970-react-Retamar/tree/entrega-final"><img src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/github-pages-icon.png" align="center" alt="Github pages"></a>    Link a la entrega final
 </div>
 
 ## Introducción al proyecto
