@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { CartContext } from "./context/CartContext"
 import { Link } from "react-router-dom"
 import trash from "../assets/trash.svg"
+
 const Cart = () => {
     const { cart, removeItem, clear, QtotalProductos, SumaTotalProductos } = useContext(CartContext)
 
@@ -22,7 +23,16 @@ const Cart = () => {
     return (
         <div className="container" style={{ display: "inline-flex", flexDirection: "row", height: "100%", justifyContent: "center", alignItems: "center", gap: "40px" }}>
             <div className="lista-producto" style={{ backgroundColor: "#E7D4F5", borderRadius: "10px", border: "2px solid blue", width: "60%", minHeight: "240px" }}>
-                <h3 className="titulo-compra">Productos</h3>
+                <h3 className="titulo-compra">Productos
+                    <tr>
+                        <td>
+                            <a href="#" onClick={clear} className="btn btn-danger"> Vaciar Carrito
+                                <img src={trash} alt="Vaciar Carrito" title="Vaciar Carrito" />
+                            </a>
+                        </td>
+                    </tr>
+                </h3>
+
                 <div>
                     <table className="table">
                         <tbody>
@@ -35,7 +45,7 @@ const Cart = () => {
                                         <td>{product.quantity}</td>
                                         <td>${parseInt(product.quantity * product.precio)}</td>
                                         <td>
-                                            <a href="#" onClick={() => {removeItem(product.id)}}>
+                                            <a href="#" onClick={() => { removeItem(product.id) }}>
                                                 <img src={trash} alt="Eliminar producto" title="Eliminar producto" />
                                             </a>
                                         </td>
@@ -46,13 +56,25 @@ const Cart = () => {
                 </div>
             </div>
             <div className="lista-producto" style={{ backgroundColor: "#E7D4F5", borderRadius: "10px", border: "2px solid blue", width: "30%", maxHeight: "240px" }}>
-                <td><h3 className="resumen-compra">Resumen de compra</h3></td>
-                <td className="productos-carrito"><p>Productos</p><td>${SumaTotalProductos()}</td></td>
-                <td className="productos-carrito"><p>Envío </p><b> Gratis</b></td>
-                <td className="productos-carrito"><p><b>Total</b> </p><td>${SumaTotalProductos()}</td></td>
-                <td style={{ borderTop: "2px solid white", display: "flex", alignContent: "center", justifyContent: "center", height: "40px", paddingTop: "10px", marginBottom: "10px" }}><button type="button" className="btn btn-primary">Finalizar compra</button></td>
+                <h3 className="resumen-compra">Resumen de compra</h3>
+                <div className="productos-tarjeta" style={{ display: "flex", justifyContent: "space-between" }}>
+                    <p>Productos</p>
+                    <p>${SumaTotalProductos()}</p>
+                </div>
+                <div className="productos-tarjeta" style={{ display: "flex", justifyContent: "space-between" }}>
+                    <p>Envío</p>
+                    <b>Gratis</b>
+                </div>
+                <div className="productos-tarjeta" style={{ display: "flex", justifyContent: "space-between" }}>
+                    <p><b>Total</b></p>
+                    <p>${SumaTotalProductos()}</p>
+                </div>
+                <div style={{ borderTop: "2px solid white", display: "flex", justifyContent: "center", height: "40px", paddingTop: "10px", marginBottom: "10px" }}>
+                   <Link to={"/checkout"}  className="btn btn-primary">Finalizar compra</Link>
+                </div>
             </div>
         </div>
+
     )
 }
 

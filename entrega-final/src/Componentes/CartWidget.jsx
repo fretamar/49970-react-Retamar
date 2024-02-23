@@ -25,8 +25,9 @@ const Estilo2 = {
 
 const CartWidget = () => {
     const{QtotalProductos} = useContext(CartContext)
+    const[productosCarrito, setProductosCarrito] = useState(0)
     const modificarBoton = () => {
-        setproductosCarrito(prevproductosCarrito => prevproductosCarrito + 1)
+        setProductosCarrito(prevproductosCarrito => prevproductosCarrito + 1)
     }
 
     return (

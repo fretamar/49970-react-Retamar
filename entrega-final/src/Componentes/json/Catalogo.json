@@ -1,6 +1,6 @@
 [
     {
-        "id": 123,
+        "idx": 123,
         "marca": "Villa del sur",
         "tamanio": "500 cc",
         "tipo": "Agua mineral",
@@ -12,7 +12,7 @@
        "stock": 19
     },
     {
-        "id": 234,
+        "idx": 234,
         "marca": "Bonaqua",
         "tamanio": "500 cc",
         "tipo": "Agua mineral",
@@ -24,7 +24,7 @@
        "stock": 19
     },
     {
-        "id": 345,
+        "idx": 345,
         "marca": "Villavicencio",
         "tamanio": "500 cc",
         "tipo": "Agua mineral",
@@ -36,7 +36,7 @@
        "stock": 19
     },
     {
-        "id": 456,
+        "idx": 456,
         "marca": "Glaciar",
         "tamanio": "500 cc",
         "tipo": "Agua mineral",
@@ -48,7 +48,7 @@
        "stock": 19
     },
     {
-        "id": 789,
+        "idx": 789,
         "marca": "Heineken",
         "tamanio": "500 cc",
         "tipo": "Cerveza",
@@ -60,7 +60,7 @@
        "stock": 19
     },
     {
-        "id": 321,
+        "idx": 321,
         "marca": "Heineken",
         "tamanio": "1 litro",
         "tipo": "Cerveza",
@@ -72,7 +72,7 @@
        "stock": 19
     },
     {
-        "id": 432,
+        "idx": 432,
         "marca": "Stella Artois",
         "tamanio": "500 cc",
         "tipo": "Cerveza",
@@ -84,7 +84,7 @@
        "stock": 19
     },
     {
-        "id": 543,
+        "idx": 543,
         "marca": "Stella Artois",
         "tamanio": "1 litro",
         "tipo": "Cerveza",
@@ -96,7 +96,7 @@
        "stock": 19
     },
     {
-        "id": 654,
+        "idx": 654,
         "marca": "Quilmes",
         "tamanio": "500 cc",
         "tipo": "Cerveza",
@@ -108,7 +108,7 @@
        "stock": 19
     },
     {
-        "id": 765,
+        "idx": 765,
         "marca": "Quilmes",
         "tamanio": "1 litro",
         "tipo": "Cerveza",
@@ -120,7 +120,7 @@
        "stock": 19
     },
     {
-        "id": 987,
+        "idx": 987,
         "marca": "Brahma",
         "tamanio": "500 cc",
         "tipo": "Cerveza",
@@ -132,7 +132,7 @@
        "stock": 19
     },
     {
-        "id": 111,
+        "idx": 111,
         "marca": "Brahma",
         "tamanio": "1 litro",
         "tipo": "Cerveza",
@@ -144,7 +144,7 @@
        "stock": 19
     },
     {
-        "id": 222,
+        "idx": 222,
         "marca": "Coca Cola",
         "tamanio": "330 cc",
         "tipo": "Gaseosa",
@@ -156,7 +156,7 @@
        "stock": 19
     },
     {
-        "id": 333,
+        "idx": 333,
         "marca": "Coca Cola",
         "tamanio": "1.5 litros",
         "tipo": "Gaseosa",
@@ -168,7 +168,7 @@
        "stock": 19
     },
     {
-        "id": 444,
+        "idx": 444,
         "marca": "Sprite",
         "tamanio": "330 cc",
         "tipo": "Gaseosa",
@@ -180,7 +180,7 @@
        "stock": 19
     },
     {
-        "id": 555,
+        "idx": 555,
         "marca": "Sprite",
         "tamanio": "1.5 litros",
         "tipo": "Gaseosa",
@@ -192,7 +192,7 @@
        "stock": 19
     },
     {
-        "id": 666,
+        "idx": 666,
         "marca": "Paso de los toros Pomelo",
         "tamanio": "330 cc",
         "tipo": "Gaseosa",
@@ -204,7 +204,7 @@
        "stock": 19
     },
     {
-        "id": 777,
+        "idx": 777,
         "marca": "Paso de los toros Pomelo",
         "tamanio": "1.5 litros",
         "tipo": "Gaseosa",
@@ -216,7 +216,7 @@
        "stock": 19
     },
     {
-        "id": 888,
+        "idx": 888,
         "marca": "Villavicencio",
         "tamanio": "500 cc",
         "tipo": "Agua con gas",
@@ -228,7 +228,7 @@
        "stock": 19
     },
     {
-        "id": 787,
+        "idx": 787,
         "marca": "Chivas",
         "tamanio": "1 litro",
         "tipo": "Whisky",
@@ -240,7 +240,7 @@
        "stock": 19
     },
     {
-        "id": 121,
+        "idx": 121,
         "marca": "Johnnie Walker Red Label",
         "tamanio": "1 litro",
         "tipo": "Whisky",
@@ -252,7 +252,7 @@
        "stock": 19
     },
     {
-        "id": 232,
+        "idx": 232,
         "marca": "Johnnie Walker Black Label",
         "tamanio": "1 litro",
         "tipo": "Whisky",
@@ -264,7 +264,7 @@
        "stock": 19
     },
     {
-        "id": 343,
+        "idx": 343,
         "marca": "Johnnie Walker Blue Label",
         "tamanio": "1 litro",
         "tipo": "Whisky",
@@ -276,7 +276,7 @@
        "stock": 19
     },
     {
-        "id": 454,
+        "idx": 454,
         "marca": "Trumpeter Malbec",
         "tamanio": "1 litro",
         "tipo": "Vino",
@@ -288,7 +288,7 @@
        "stock": 19
     },
     {
-        "id": 565,
+        "idx": 565,
         "marca": "Nicassia Malbec",
         "tamanio": "1 litro",
         "tipo": "Vino",
@@ -300,7 +300,7 @@
        "stock": 19
     },
     {
-        "id": 774,
+        "idx": 774,
         "marca": "Müecas",
         "tamanio": "200grs",
         "tipo": "Barritas de cereal",
@@ -312,7 +312,7 @@
        "stock": 19
     },
     {
-        "id": 887,
+        "idx": 887,
         "marca": "Don Lorenzo",
         "tamanio": "1kg",
         "tipo": "Pan dulce",
@@ -324,7 +324,7 @@
         "stock": 19
     },
     {
-        "id": 545,
+        "idx": 545,
         "marca": "Valido",
         "tamanio": "1kg",
         "tipo": "Pan dulce",
